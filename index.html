@@ -4,17 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./icons/short-logo.svg" type="image/x-icon">
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
   <title>MAX INSTALL</title>
 </head>
 <body>
-  <section class="first-screen">
+  <header>
+    <nav class="header-nav">
+      <div class="header__wrapper-logo">
+        <a href="./index.html">MAX INSTALL</a>
+      </div>
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">Главная</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">О компании</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">Возможности</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">Сертификат</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">Этапы работ</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="first-screen">
     <div class="col">
       <h1 class="first-screen__title">Проектирование,
-        <br> монтаж и обслуживание
-        <br> слаботочных систем</h1>
+      <br> монтаж и обслуживание
+      <br> слаботочных систем</h1>
       <ul class="first-screen__features__list">
         <li class="first-screen__features__item">Maxinstall предлагает услуги по разработке и внедрению:</li>
         <li class="first-screen__features__item">Видеонаблюдения</li>
@@ -26,46 +54,21 @@
       </div>
     </div>
     <div class="first-screen__wrapper-illustration">
-      <img width="380" src="./icons/main-illustration.svg" alt="logo">
+      <img width="380" src="./img/main-illustration.svg" alt="logo">
     </div>
     <div class="first-screen__arrow-icon">
-      <svg fill="#fff" width="40px" height="40px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <svg fill="#000" width="40px" height="40px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.256 8.606c0-0.269 0.106-0.544 0.313-0.75 0.412-0.412 1.087-0.412 1.5 0l14.119 14.119 13.913-13.912c0.413-0.412 1.087-0.412 1.5 0s0.413 1.088 0 1.5l-14.663 14.669c-0.413 0.413-1.088 0.413-1.5 0l-14.869-14.869c-0.213-0.213-0.313-0.481-0.313-0.756z"></path>
       </svg>
     </div>
-  </section>
-  <main>
-    <header>
-      <nav class="header-nav">
-        <div class="header__wrapper-logo">
-          <a href="./index.html">MAX INSTALL</a>
-        </div>
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">Главная</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">О компании</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">Возможности</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">Сертификат</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">Этапы работ</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <h2 class="section__title">О компании</h2>
-      <div style="height: 110vh;"></div>
-    </section>
   </main>
+  <section>
+    <h2 class="section__title">О компании</h2>
+    <p class="section__text">Мы занимаемся монтажом систем спутникового и эфирного телевидения, интернета, видеонаблюдения, домофонов, сигнализаций как для индивидуального, так и для коллективного просмотра (подключение эфирного и спутникового телевидения, интернета для жилых домов, коттеджей и организаций), а также проектированием, монтажом, обслуживанием оборудования различных производителей. Мы всегда готовы обеспечить своих клиентов качественным и высоким уровнем услуг, предложить возможность выбора широкого ассортимента оборудования по разумным ценам. Проводя анализ потребительского спроса, мы стараемся вводить в ассортиментный ряд товары, которые удовлетворят спрос самого требовательного покупателя.</p>
+  </section>
+  <section class="services" style=" background-color: #fff895; height: 500px; color: #3b3b3b;">
+    <h2 class="section__title">Какие услуги мы предоставляем?</h2>
+  </section>
+      <div style="height: 110vh;"></div>
 </body>
 </html>

@@ -3,13 +3,13 @@ body {
 }
 
 header {
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   width: 100%;
-  position: sticky;
   left: 0;
   top: 0;
+  z-index: 2;
 }
 
 header::before {
@@ -20,8 +20,8 @@ header::before {
   top: 0;
   left: 0;
   z-index: -1;
-  backdrop-filter: blur(2px);
-  background-color: rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(3px);
+  background-color: rgba(211, 211, 211, 0.233);
 }
 
 .header-nav {
@@ -45,6 +45,28 @@ header::before {
 .header-nav__link {
   color: #000;
   font-weight: 500;
+  position: relative;
+}
+
+.header-nav__link:hover {
+  color: #ffdd00;
+}
+
+.header-nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  width: 0%;
+  transition: width .2s;
+  height: 2px;
+  margin: auto;
+  background-color: #ffdd00;
+}
+
+.header-nav__link:hover::after {
+  width: 100%;
 }
 
 .first-screen::before {
@@ -55,7 +77,6 @@ header::before {
   top: 0;
   left: 0;
   z-index: -1;
-  background-image: url(../img/main-background.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -63,7 +84,6 @@ header::before {
 .first-screen {
   height: 100vh;
   display: flex;
-  color: white;
   position: relative;
   padding: 0 5rem;
   display: flex;
@@ -74,7 +94,7 @@ header::before {
 .first-screen__title {
   font-size: 2.8rem;
   line-height: 1.4;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 900;
 }
 
@@ -95,9 +115,7 @@ header::before {
 }
 
 .first-screen__description {
-  
-  text-decoration: solid #fff underline;
-  color: #fff;
+  text-decoration: solid #000 underline;
 }
 
 .first-screen__wrapper-illustration {
@@ -131,12 +149,8 @@ header::before {
   }
 }
 
-main {
-  position: relative;
-}
-
 section {
-  padding: 2rem 3rem;
+  padding: 2.5rem 5rem;
 }
 
 .section__title {
@@ -155,4 +169,10 @@ section {
   width: 85px;
   height: 16px;
   z-index: -1;
+}
+
+.section__text {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
 }
