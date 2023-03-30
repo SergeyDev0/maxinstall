@@ -35,6 +35,7 @@ header::before {
 .header__wrapper-logo a {
   font-size: 1.5rem;
   color: #000;
+  transition: color .3s;
 }
 
 .header-nav__list {
@@ -48,8 +49,8 @@ header::before {
   position: relative;
 }
 
-.header-nav__link:hover {
-  color: #ffdd00;
+.header-nav__link:hover, .header__wrapper-logo a:hover {
+  color: #f1d101;
 }
 
 .header-nav__link::after {
@@ -62,7 +63,7 @@ header::before {
   transition: width .2s;
   height: 2px;
   margin: auto;
-  background-color: #ffdd00;
+  background-color: #f1d101;
 }
 
 .header-nav__link:hover::after {
@@ -116,6 +117,12 @@ header::before {
 
 .first-screen__description {
   text-decoration: solid #000 underline;
+  transition: ease .2s;
+}
+
+.first-screen__description:hover {
+  color: #e9ca02;
+  text-decoration-color: #e9ca02;
 }
 
 .first-screen__wrapper-illustration {
