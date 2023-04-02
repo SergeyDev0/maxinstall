@@ -193,7 +193,7 @@ section {
 
 .section__title::before {
   position: absolute;
-  content: url(../icons/ellipse.svg);
+  content: url(../icons/ellipse-section.svg);
   transform: translateY(7px);
   width: 85px;
   height: 16px;
