@@ -5,10 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./icons/short-logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
   <title>MAX INSTALL</title>
+  <style>
+    .swiper {
+  width: 800px;
+  height: 90%;
+}
+  </style>
 </head>
 <body>
   <header>
@@ -66,9 +73,40 @@
     <h2 class="section__title">О компании</h2>
     <p class="section__text">Мы занимаемся монтажом систем спутникового и эфирного телевидения, интернета, видеонаблюдения, домофонов, сигнализаций как для индивидуального, так и для коллективного просмотра (подключение эфирного и спутникового телевидения, интернета для жилых домов, коттеджей и организаций), а также проектированием, монтажом, обслуживанием оборудования различных производителей. Мы всегда готовы обеспечить своих клиентов качественным и высоким уровнем услуг, предложить возможность выбора широкого ассортимента оборудования по разумным ценам. Проводя анализ потребительского спроса, мы стараемся вводить в ассортиментный ряд товары, которые удовлетворят спрос самого требовательного покупателя.</p>
   </section>
-  <section class="services" style=" background-color: #fff895; height: 500px; color: #3b3b3b;">
+  <section class="services" style=" background-color: #fffcca; height: 500px; color: #333333;">
     <h2 class="section__title">Какие услуги мы предоставляем?</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-color: red;">Slide 1</div>
+        <div class="swiper-slide" style="background-color: red;">Slide 2</div>
+        <div class="swiper-slide" style="background-color: red;">Slide 3</div>
+        <div class="swiper-slide" style="background-color: red;">Slide 4</div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </section>
-      <div style="height: 110vh;"></div>
+  <div style="height: 110vh;"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+  }
+});
+  </script>
 </body>
 </html>
