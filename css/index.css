@@ -1,5 +1,5 @@
 * {
-  box-sizing: padding-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -39,6 +39,7 @@ header::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .header__wrapper-logo a,
@@ -161,6 +162,10 @@ header::before {
   align-items: center;
   margin-top: 0;
   margin-left: 0;
+}
+
+.first-screen__wrapper-illustration img {
+  width: 380px;
 }
 
 .first-screen__arrow-icon {
