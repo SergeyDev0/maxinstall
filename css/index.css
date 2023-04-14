@@ -347,7 +347,7 @@ section {
 
 .certificate__img {
   width: 600px;
-  box-shadow: 0px 0px 8px 1px rgb(223, 223, 223);
+  box-shadow: 0px 0px 8px 1px #dfdfdf;
 }
 
 .contacts {
@@ -358,6 +358,7 @@ section {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  box-shadow: 0 2px 4px 0px #ececec;
 }
 
 .contacts__title {
