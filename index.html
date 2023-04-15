@@ -31,25 +31,25 @@
           </button>
           <ul class="header-nav__list">
             <li class="header-nav__item">
+              <a class="header-nav__link" href="#home">Главная</a>
+            </li>
+            <li class="header-nav__item">
               <a class="header-nav__link" href="#about">О компании</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#">Особенности</a>
+              <a class="header-nav__link" href="#features">Особенности</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#">Сертификат</a>
+              <a class="header-nav__link" href="#certificate">Сертификат</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#">Этапы работ</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#">Контакты</a>
+              <a class="header-nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="first-screen">
+    <main class="first-screen" id="home">
       <div class="col">
         <h1 class="first-screen__title">Проектирование,
           <br> монтаж и обслуживание
@@ -78,7 +78,7 @@
       </div>
     </main>
     <section>
-      <h2 class="section__title">О компании</h2>
+      <h2 class="section__title" id="about">О компании</h2>
       <p class="section__text">Мы занимаемся монтажом систем спутникового и эфирного телевидения, интернета,
         видеонаблюдения, домофонов, сигнализаций как для индивидуального, так и для коллективного просмотра (подключение
         эфирного и спутникового телевидения, интернета для жилых домов, коттеджей и организаций), а также
@@ -130,7 +130,7 @@
       </div>
     </section>
     <section class="features">
-      <h3 class="section__title">Особенности нашей работы</h3>
+      <h3 class="section__title" id="features">Особенности нашей работы</h3>
       <p class="section__description"></p>
       <div class="features__wrapper-cards">
 
@@ -193,7 +193,7 @@
 
       </div>
     </section>
-    <section class="certificate">
+    <section class="certificate" id="certificate">
       <h2 class="section__title">Сертификат</h2>
       <p class="certificate__description">Наша продукция и услуги сертифицированы стандартами качества.</p>
       <div class="certificate__wrapper-img">
@@ -201,7 +201,7 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Как с нами связаться?</h2>
+      <h2 class="contacts__title" id="contacts">Как с нами связаться?</h2>
       <p class="contacts__description">Оставьте заявку и мы Вам перезвоним в ближайшее время</p>
       <form class="contacts__wrapper-form">
         <input class="contacts__form-input" type="phone" placeholder="Введите свой номер телефона" required>
@@ -233,19 +233,19 @@
               <b>Навигация по сайту:</b>
             </li>
             <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">О компании</a>
+              <a href="#home" class="footer-nav__link">Главная</a>
             </li>
             <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Особенности</a>
+              <a href="#about" class="footer-nav__link">О компании</a>
             </li>
             <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Сертификат</a>
+              <a href="#features" class="footer-nav__link">Особенности</a>
             </li>
             <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Этапы работ</a>
+              <a href="#certificate" class="footer-nav__link">Сертификат</a>
             </li>
             <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Контакты</a>
+              <a href="#contacts" class="footer-nav__link">Контакты</a>
             </li>
           </ul>
         </div>

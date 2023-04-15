@@ -156,10 +156,6 @@
     font-size: 1rem;
   }
 
-  .first-screen__button {
-    margin: auto;
-  }
-
   .first-screen__arrow-icon,
   .first-screen__arrow-icon svg {
     width: 32px;
