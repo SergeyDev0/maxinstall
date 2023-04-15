@@ -137,6 +137,7 @@
 
 @media screen and (max-width: 425px) {
   .first-screen {
+    box-sizing: content-box;
     height: 95vh;
     padding-bottom: 5vh;
     border-bottom: 1px solid #ebebeb;
