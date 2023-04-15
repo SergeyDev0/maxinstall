@@ -55,6 +55,22 @@ header::before {
   font-size: inherit;
 }
 
+.header__hamburger-button {
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 30px;
+  height: 25px;
+  padding: 0;
+  background-color: inherit;
+}
+
+.header__hamburger-button span {
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+}
+
 .header-nav__list {
   display: flex;
   gap: 0 2rem;
@@ -196,12 +212,12 @@ section {
 }
 
 .section__title {
+  display: flex;
+  position: relative;
   font-size: 2rem;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
   width: fit-content;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .section__title::before {
@@ -211,6 +227,7 @@ section {
   width: 85px;
   height: 16px;
   z-index: -1;
+  right: 0;
 }
 
 .section__text {
