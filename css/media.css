@@ -73,7 +73,8 @@
 
 @media screen and (max-width: 425px) {
   .first-screen {
-    height: 85vh;
+    height: 90vh;
+    margin-bottom: 10vh;
   }
   .first-screen__title {
     font-size: 1.4rem;
