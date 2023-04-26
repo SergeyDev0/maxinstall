@@ -424,8 +424,15 @@ section {
   width: 100%;
 }
 
+.map {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ebebeb;
+}
+
 footer {
-  padding: 2rem;
+  padding: 2rem 5rem;
 }
 
 .footer__wrapper {
