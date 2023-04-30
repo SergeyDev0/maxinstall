@@ -173,6 +173,10 @@
     display: none;
   }
 
+  .section__text {
+    text-align: left;
+  }
+
   .features__card {
     margin: auto;
   }
