@@ -428,11 +428,20 @@ section {
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #ebebeb;
 }
 
 footer {
   padding: 2rem 5rem;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ebebeb;
+  left: 0;
+  transform: translateY(-2rem);
 }
 
 .footer__wrapper {

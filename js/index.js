@@ -17,7 +17,7 @@ hamburgerLinks.forEach((a) => {
   })
 })
 
-// 
+// Плавный скролл при нажатии на ссылки
 document.querySelectorAll('a[href*="#"]').forEach(anchor => anchor.addEventListener("click", function (e) {
   const anchorTargetID = anchor.getAttribute("href").substring(1);
   const $anchorTarget = document.getElementById(anchorTargetID);
